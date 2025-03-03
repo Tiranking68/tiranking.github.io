@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סוגי כלבים</title>
+    <style>
+        body {
+            background-color: #808080; /* רקע אפור */
+            color: white; /* צבע טקסט */
+            text-align: center; /* למרכז את הטקסט */
+        }
+        .large-text {
+            font-size: 25px;
+        }
+        .menu-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            color: white; /* צבע טקסט בתפריט */
+        }
+        .menu-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 50px;
+            right: 10px; /* תפריט נפתח מהצד הימני */
+            background-color: #333;
+            width: 200px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        .menu a {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            color: white; /* צבע טקסט בתפריט */
+        }
+        .menu a:hover {
+            background-color: #575757;
+        }
+        .menu-toggle {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .menu-toggle div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="Home.html">דף הבית</a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="Home.html">דף הבית</a>
+        <a href="Dog.html">🐶 סוגי כלבים</a>
+        <a href="Love.html">❤️ אימוץ</a>
+        <a href="toys.html">🧸 צעצועי כלבים</a>
+        <a href="dog_info.html">ℹ️ מידע על כלבים</a>
+    </div>
+
+    <h1>סוגי כלבים</h1>
+    <ul>
+        <li> גולדן רטריבר </li>
+        <li> לברדור רטריבר </li>
+        <li> שיה-צו </li>
+        <li> פומרניין </li>
+        <li> ג'ק ראסל טרייר </li>
+        <li> בוקסר </li>
+        <li> האסקי סיבירי </li>
+        <li> בולדוג אנגלי </li>
+        <li> רועה גרמני </li>
+        <li> פודל </li>
+        <li> קאבליר קינג צ'ארלס ספנייל </li>
+        <li> רוטווילר </li>
+        <li> מלטזי </li>
+        <li> טוי טרייר </li>
+        <li> דוברמן </li>
+        <li> ביגל </li>
+        <li> בורדר קולי </li>
+        <li> אלסקן מלמוט </li>
+        <li> פקינז </li>
+        <li> פאג </li>
+        <li> ויימראנר </li>
+        <li> וולש קורגי </li>
+        <li> איירדייל טרייר </li>
+        <li> בישון פריזה </li>
+        <li> פיטבול טרייר </li>
+        <li> כלב רוח אפגני </li>
+    </ul>
+    <a href="Home.html">סוגי כלבים </a>
+    <footer>זה כל סוגי הכלבים שאני מכיר</footer>
+</body>
+</html>
